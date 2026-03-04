@@ -2,7 +2,7 @@
 
 Виртуальный питомец нового поколения — тамагочи с тактическими боями, эмоциями, магазином, ежедневными заданиями и социальным взаимодействием между игроками.
 
-**🌐 Демо:** [tamaguchi.onrender.com](https://tamaguchi.onrender.com)
+ [tamaguchi.onrender.com](https://tamaguchi.onrender.com)
 
 ---
 
