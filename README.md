@@ -41,38 +41,11 @@
 
 | Слой | Технологии |
 |------|-----------|
-| Frontend | Vanilla JS, CSS3 (glassmorphism, анимации) |
+| Frontend | Vanilla JS, CSS3 |
 | Backend | Node.js, Express |
 | База данных | PostgreSQL |
 | Авторизация | Telegram Login Widget |
 | Деплой | Render |
-
----
-
-## 📁 Структура проекта
-
-```
-├── server.js              # Express сервер, сессии, маршруты
-├── package.json
-├── db/
-│   └── init.js            # Инициализация таблиц PostgreSQL
-├── routes/
-│   ├── auth.js            # Telegram авторизация, сессии
-│   ├── pet.js             # CRUD питомца, статистика, чат, лидерборд
-│   └── social.js          # Глобальный чат, PvP, подарки, игроки
-└── public/
-    ├── index.html          # HTML разметка всех экранов
-    ├── css/
-    │   └── style.css       # Весь CSS (glassmorphism, OLED, анимации)
-    └── js/
-        ├── app.js          # Ядро: типы питомцев, авторизация, UI, действия
-        ├── tetris.js       # Тетрис с тач-управлением
-        ├── chest.js        # Мини-игра сундуки
-        ├── battle.js       # Арена с эмоциями
-        ├── shop.js         # Магазин предметов
-        ├── quests.js       # Ежедневные задания + достижения
-        └── social.js       # Глобальный чат, PvP, подарки
-```
 
 ---
 
@@ -91,49 +64,3 @@
 
 ---
 
-## ⚙️ Установка и запуск
-
-### Переменные окружения
-
-```env
-DATABASE_URL=postgresql://user:pass@host:5432/dbname
-BOT_TOKEN=123456:ABC-DEF           # от @BotFather
-BOT_USERNAME=MyPocketPetBot        # имя бота без @
-SESSION_SECRET=random_secret_key
-NODE_ENV=production
-```
-
-### Локально
-
-```bash
-git clone https://github.com/your-repo/mypocketpet.git
-cd mypocketpet
-npm install
-# Создай .env с переменными выше
-node server.js
-# Открой http://localhost:3000
-```
-
-### Деплой на Render
-
-1. Создай **Web Service** → подключи GitHub репозиторий
-2. Build: `npm install`
-3. Start: `node server.js`
-4. Добавь Environment Variables
-5. Создай **PostgreSQL** базу, скопируй `DATABASE_URL`
-6. В BotFather: `/setdomain` → `tamaguchi.onrender.com`
-
----
-
-## 🎨 Дизайн
-
-- **iOS 2026 эстетика** — glassmorphism, размытие фона, скруглённые карточки
-- **OLED-оптимизация** — тёмный фон, минимальное свечение
-- **Боковое меню** — аккордеон с раскрывающимися секциями
-- **Адаптивность** — touch-first, жесты для мобильных
-
----
-
-## 📜 Лицензия
-
-MIT
